@@ -15,14 +15,15 @@
         form {
             margin: 10px;
         }
+        nav-link {
+            color: blue;
+        }
     </style>
 
 </head>
 
 <header>
-
-
-    <nav class="navbar nav-tabs navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <h1 class="navbar-brand" style="font-size: 30px;">Osmond Ong</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,35 +31,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent" >
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link ml-auto" href="index.html">About Me</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About Me</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-
-    <!-- <nav class="navbar nav-tabs navbar-light fixed-top"
-    style="background-color: #e3f2fd;">
-    
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">About Me</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact</a>
-        </li>
-    </ul>
-    </nav> -->
 </header>
 
 <body>
@@ -69,11 +53,11 @@
             <h3>Contact</h3>
             <div>
                 <label for="name">Name </label>
-                <input class="d-flex" type="text" placeholder="John Smith">
+                <input class="form-control" type="text" placeholder="John Smith">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email </label>
-                <input type="email" class="d-flex" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="example@email.com">
             </div>
             <div class="form-group">
