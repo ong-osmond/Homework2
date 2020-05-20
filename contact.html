@@ -19,9 +19,11 @@
     </style>
 </head>
 
-<body>
+<body class="d-flex flex-column">
     <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
-        <a href="index.html"><h1 class="navbar-brand" style="font-size: 30px;">Osmond Ong</h1></a> 
+        <a href="index.html">
+            <h1 class="navbar-brand" style="font-size: 30px;">Osmond Ong</h1>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,7 +42,7 @@
             </ul>
         </div>
     </nav>
-    <div class="wrapper" style="margin-top:80px; margin-left: 10px;">
+    <div class="wrapper" style="margin-top:80px; margin-left: 10px; margin-bottom: 80px;">
         <form>
             <h1>Contact</h1>
             <div>
@@ -59,6 +61,11 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-100 fixed-bottom">
+        <div class="container text-center">
+            <small style="color: white">Copyright &copy; 2020 Osmond Ong</small>
+        </div>
+    </footer>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
