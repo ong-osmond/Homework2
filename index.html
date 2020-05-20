@@ -3,19 +3,16 @@
 <html lang="en-us">
 
 <head>
-
-    <meta charset="UTF-8" name="viewport" content = "width=device-width, initial-scale=1.0">
-
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osmond Ong - About Me</title>
-
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <h1 class="navbar-brand" style="font-size: 30px;">Osmond Ong</h1>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <a href="index.html"><h1 class="navbar-brand" style="font-size: 30px;">Osmond Ong</h1></a> 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About Me</a>
+                    <a class="nav-link" href="index.html">About</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -34,52 +31,59 @@
             </ul>
         </div>
     </nav>
-</header>
-
-<body>
-
-    <div class="wrapper" style="margin: 10px;">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="page-header">
-                        <h1>About Me</h1>
+    <div class="container" style="margin-top:80px; margin-left: 10px;">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>About Me</h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEK8QufAUGOPA/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=njlLRMoWlTR-Vt58QlIaxbcyOgMFXY6oGb2wGFQQXHY"
+                            alt="Placeholder" class="img-thumbnail">
                     </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEK8QufAUGOPA/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=njlLRMoWlTR-Vt58QlIaxbcyOgMFXY6oGb2wGFQQXHY"
-                                alt="Placeholder" class="img-thumbnail">
-                        </div>
-                        <div class="col-md-9">
-                            Welcome to my website!
+                    <div class="col-md-9">
+                        <p>Welcome to my website!
                             <br> My name is Osmond Ong. I'm based in Perth, Western Australia.
                             <br> I'm taking up the University of Western Australia (UWA) Full Stack Developer Bootcamp.
                             <br> This is my Homework for Week 2 of the course.
                             <br> Connect with me through <a href="https://www.linkedin.com/in/osmond-ong-955b0913/"
                                 target="_blank">LinkedIn</a>
-                                or <a href="https://www.facebook.com/osmond.ong"
-                            target="_blank">Facebook</a>.
-                            </p>
-                        </div>
+                            or <a href="https://www.facebook.com/osmond.ong" target="_blank">Facebook</a>.
+                        </p>
                     </div>
-                </div>
-                <!--Create Card taking up 4 Columns-->
-                <div class="col-md-4">
-                    <div class="card mt-2">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                    <div class="row" style="margin-top:10px; margin-left: 10px;">
+                        <div id="fb-root" style="margin: 4px;"></div>
+                        <script async defer crossorigin="anonymous"
+                            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+                        <div class="fb-share-button" data-href="https://ong-osmond.github.io/Homework2/"
+                            data-layout="button_count" data-size="small">
+                            <a target="_blank"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fong-osmond.github.io%2FHomework2%2F&amp;src=sdkpreparse"
+                                class="fb-xfbml-parse-ignore">Share</a></div>
+                        <div style="margin: 4px;">
+                            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                                data-text="I found this awesome website! Check it out at https://ong-osmond.github.io/Homework2/"
+                                data-show-count="false">Tweet</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="card mt-2">
+                    <div class="card-body">
+                        <iframe width="280" height="157" src="https://www.youtube.com/embed/GXjJ9JwFPjw" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen alt="Osmond's YouTube Channel" title="Osmond's YouTube Channel"></iframe>
+                        <a href="https://www.youtube.com/channel/UCN_dsTVbthm0B8F7ZqsKndg" target="_blank">
+                            <h5 class="card-title">Osmond's YouTube Channel</h5>
+                        </a>
+                        <p class="card-text">Follow me on my YouTube channel! A collection of videos about people and
+                            events.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
-
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
