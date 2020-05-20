@@ -6,51 +6,74 @@
 
     <meta charset="UTF-8">
 
-    <title>Osmond Ong - About Me</title>
+    <title>Osmond Ong - Contact</title>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         form {
-          margin: 30px;  
+            margin: 10px;
         }
     </style>
 
 </head>
 
+<header>
 
 
-<body>
-
-    <header>
-        <h3>Your Name</h3>
-        <div>
-            <ul class="nav justify-content-end">
+    <nav class="navbar nav-tabs navbar-expand-lg navbar-light bg-light">
+        <h1 class="navbar-brand" style="font-size: 30px;">Osmond Ong</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">About Me</a>
+                    <a class="nav-link ml-auto" href="index.html">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
-    </header>
+    </nav>
+
+
+    <!-- <nav class="navbar nav-tabs navbar-light fixed-top"
+    style="background-color: #e3f2fd;">
+    
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">About Me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+        </li>
+    </ul>
+    </nav> -->
+</header>
+
+<body>
+
 
     <div class="wrapper">
-        
         <form>
             <h3>Contact</h3>
             <div>
                 <label for="name">Name </label>
-                <input class="form-control" type="text" placeholder="John Smith">
+                <input class="d-flex" type="text" placeholder="John Smith">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email </label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="email" class="d-flex" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="example@email.com">
             </div>
             <div class="form-group">
@@ -64,5 +87,15 @@
     </div>
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 
 </html>
