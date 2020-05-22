@@ -1,4 +1,4 @@
-<!-- Media Query Demo (check the CSS page) -->
+<!-- Main Page; About me -->
 <!doctype html>
 <html lang="en-us">
 
@@ -11,6 +11,7 @@
 </head>
 
 <body class="d-flex flex-column">
+    <!-- Navbar; collapses on smaller screens -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
         <a href="index.html">
             <h1 class="navbar-brand" style="font-size: 30px;">Osmond Ong</h1>
@@ -33,10 +34,14 @@
             </ul>
         </div>
     </nav>
+    <!-- Main About Me Section -->
     <div class="container" style="margin-top:80px; margin-left: 10px; margin-bottom: 80px">
+        <!-- Main Row Content -->
         <div class="row">
-            <div class="col-md-8">
+            <!-- Main Row Column 1 -->
+            <div class="col-md-8"> 
                 <h1>About Me</h1>
+                <!-- Sub-row 1 contains My Profile Picture and Welcome to My Website Paragraph -->
                 <div class="row">
                     <div class="col-md-3">
                         <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEK8QufAUGOPA/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=njlLRMoWlTR-Vt58QlIaxbcyOgMFXY6oGb2wGFQQXHY"
@@ -52,6 +57,7 @@
                             or <a href="https://www.facebook.com/osmond.ong" target="_blank">Facebook</a>.
                         </p>
                     </div>
+                    <!-- Sub-row 2 contains Facebook and Twitter Buttons -->
                     <div class="row" style="margin-top:10px; margin-left: 10px;">
                         <div id="fb-root" style="margin: 4px;"></div>
                         <script async defer crossorigin="anonymous"
@@ -70,6 +76,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Main Row Column 2 -->
             <div class="col-md-4">
                 <div class="card mt-2">
                     <div class="card-body">
@@ -86,6 +93,7 @@
             </div>
         </div>
     </div>
+    <!-- End of Main About Me Section -->
     <footer id="sticky-footer" class="py-4 bg-dark text-white-100 fixed-bottom">
         <div class="container text-center">
             <small style="color: white">Copyright &copy; 2020 Osmond Ong</small>
