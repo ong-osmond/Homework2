@@ -9,7 +9,7 @@
 <body>
     <script type="text/javascript">
 
-        alert("Let's play Rock Paper Scissors! \n (Play up to 10 rounds!)" );
+        alert("Let's play Rock Paper Scissors! \n(Play up to 10 rounds.)" );
 
         //Initialise Values
         var play = true;
@@ -53,26 +53,26 @@
                 userLosses++;
             }
             else if (userAnswer === computerGuess) {
-                alert("It's a tie!")
+                alert("It's a draw!")
                 draws++;
             }
             //User picked an invalid value
             else if (userAnswer != 'r' || userAnswer != 'p' || userAnswer != 's') 
             {
                 alert("Invalid selection. Please try again.");
-                roundsPlayed--;
+                roundsPlayed--; //Don't count the round
             }
 
             alert("Your Wins = " + userWins + " Losses = " + userLosses + " Draws = " + draws);
 
-            //Check total games played
+            //Check total rounds played
             if (roundsPlayed == maxRounds) {
                 play = false;
             }
             else play = confirm("Do you want to play again?");
         }
 
-        alert("Final results: Your Wins = " + userWins + " Losses = " + userLosses + " Draws = " + draws);
+        alert("Final results: \nYour Wins = " + userWins + " Losses = " + userLosses + " Draws = " + draws);
         alert("Thank you for playing!");
         window.close();
 
